@@ -6,8 +6,16 @@ from .serializers import PhotoSerializer
 
 
 class PhotoViewSet(viewsets.ModelViewSet):
-    queryset = Photo.objects.all()
+    #queryset = Photo.objects.all()
+
     permission_classes = [
         permissions.AllowAny
     ]
+
     serializer_class = PhotoSerializer
+
+    def get_queryset(self):
+        return Photo.objects.all()
+
+    def perform_create(self, serializer):
+        PhotoSerializer.save(user=self.request.user)
