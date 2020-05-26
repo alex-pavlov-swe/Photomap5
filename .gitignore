@@ -12,3 +12,7 @@ media
 ### JS
 
 node_modules
+
+### static files
+
+photomap5/frontend/static/
