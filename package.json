@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development --watch ./photomap5/frontend/src/index.js --output ./photomap5/frontend/static/frontend/main.js",
-    "build": "webpack --mode production ./photomap5/frontend/src/index.js --output ./photomap5/frontend/static/frontend/main.js"
+    "build": "webpack --mode production ./photomap5/frontend/src/index.js --output ./photomap5/frontend/static/frontend/main.js",
+    "build-scss": "node-sass --watch ./photomap5/frontend/src/scss/index.scss ./photomap5/frontend/src/css/index.css"
   },
   "repository": {
     "type": "git",
@@ -24,17 +25,22 @@
     "@babel/preset-react": "^7.9.4",
     "babel-loader": "^8.1.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
+    "css-loader": "^3.5.3",
+    "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.0",
+    "react-router-dom": "^5.2.0",
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.8",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "sass-loader": "^8.0.2"
   }
 }

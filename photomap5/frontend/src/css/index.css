@@ -1,0 +1,44 @@
+nav {
+  margin: 0px;
+  opacity: 40%;
+  position: absolute;
+  top: 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  height: 80px;
+  border-bottom: 1px solid white; }
+  nav .navbar-brand {
+    color: white;
+    font-weight: bold;
+    font-size: 1.4rem; }
+  nav ul form {
+    background-color: white;
+    border-radius: 10px; }
+    nav ul form input {
+      border-radius: 10px;
+      padding-left: 10px;
+      border: none;
+      height: 32px;
+      width: 200px; }
+    nav ul form input:focus {
+      outline: none; }
+    nav ul form i {
+      background-color: white;
+      padding: 7px;
+      border: 0px; }
+    nav ul form button {
+      background-color: white; }
+  nav .btn {
+    border-radius: 10px; }
+  nav #upload-link {
+    color: black;
+    text-decoration: none; }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  font-size: 1.35rem;
+  margin: 0; }
