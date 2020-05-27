@@ -8,6 +8,15 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
   const guestLinks = (
     <Fragment>
       <li className="nav-item">
+        <Link className="nav-link" to="/login">
+          Login
+        </Link>
+      </li>
+    </Fragment>
+  );
+  const authLinks = (
+    <Fragment>
+      <li className="nav-item">
         <Link className="nav-link" to="/map">
           Map
         </Link>
@@ -30,22 +39,8 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
       </li>
     </Fragment>
   );
-  const authLinks = (
-    <Fragment>
-      <li className="nav-item">
-        <Link className="nav-Link" to="">
-          Login
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link className="nav-Link btn btn-primary" to="/upload">
-          Upload
-        </Link>
-      </li>
-    </Fragment>
-  );
   return (
-    <nav className="navbar  navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar  navbar-expand-md navbar-dark bg-dark">
       <Link className="navbar-brand" to="/">
         Photomap.io
       </Link>

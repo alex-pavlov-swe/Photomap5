@@ -15,7 +15,9 @@ function Home() {
               <h4>
                 Find the exact locations where amazing photos have been taken
               </h4>
-              <div className="btn btn-light mt-3">Join for free</div>
+              <Link className="btn btn-light mt-3" to="/register">
+                Join for free
+              </Link>
             </span>
           </div>
         </div>

@@ -12,9 +12,12 @@ nav {
     color: white;
     font-weight: bold;
     font-size: 1.4rem; }
+  nav ul .nav-link {
+    font-size: 20px; }
   nav ul form {
     background-color: white;
-    border-radius: 10px; }
+    border-radius: 10px;
+    border: 5px solid #ccc; }
     nav ul form input {
       border-radius: 10px;
       padding-left: 10px;
@@ -48,7 +51,6 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
   height: 100vh;
   width: 100%;
   margin-top: -80px;
@@ -60,3 +62,61 @@ footer {
     font-weight: bold;
     font-size: 1.2rem;
     padding: 12x; }
+
+#login {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -80px; }
+  #login .form {
+    background-color: white;
+    border-radius: 5px;
+    width: 300px;
+    padding: 20px; }
+    #login .form input {
+      border-radius: 5px;
+      padding: 5px; }
+    #login .form button {
+      width: 100%; }
+  #login .hide {
+    opacity: 0;
+    transition: opacity 0.5s linear;
+    -webkit-transition: opacity 0.5s linear;
+    -moz-transition: opacity 0.5s linear;
+    -o-transition: opacity 0.5s linear; }
+  #login .show {
+    opacity: 1;
+    transition: opacity 0.5s linear;
+    -webkit-transition: opacity 0.5s linear;
+    -moz-transition: opacity 0.5s linear;
+    -o-transition: opacity 0.5s linear; }
+
+#register {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -80px; }
+  #register .form {
+    background-color: white;
+    border-radius: 5px;
+    width: 300px;
+    padding: 20px; }
+    #register .form input {
+      border-radius: 5px;
+      padding: 5px; }
+    #register .form button {
+      width: 100%; }
+  #register .hide {
+    opacity: 0;
+    transition: opacity 0.5s linear;
+    -webkit-transition: opacity 0.5s linear;
+    -moz-transition: opacity 0.5s linear;
+    -o-transition: opacity 0.5s linear; }
+  #register .show {
+    opacity: 1;
+    transition: opacity 0.5s linear;
+    -webkit-transition: opacity 0.5s linear;
+    -moz-transition: opacity 0.5s linear;
+    -o-transition: opacity 0.5s linear; }

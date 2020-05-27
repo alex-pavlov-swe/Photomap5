@@ -1,0 +1,77 @@
+@import './variables.scss';
+
+#login {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -$navbar-height;
+  .form {
+    background-color: white;
+    border-radius: 5px;
+    width: 300px;
+    padding: 20px;
+    input {
+      border-radius: 5px;
+      padding: 5px;
+    }
+    button {
+      width: 100%;
+    }
+  }
+  .hide {
+    opacity: 0;
+    transition: opacity 0.5s linear;
+    -webkit-transition: opacity 0.5s linear;
+    -moz-transition: opacity 0.5s linear;
+    -o-transition: opacity 0.5s linear;
+  }
+  .show {
+    opacity: 1;
+    transition: opacity 0.5s linear;
+    -webkit-transition: opacity 0.5s linear;
+    -moz-transition: opacity 0.5s linear;
+    -o-transition: opacity 0.5s linear;
+  }
+}
+
+#register {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -$navbar-height;
+  .form {
+    background-color: white;
+    border-radius: 5px;
+    width: 300px;
+    padding: 20px;
+    input {
+      border-radius: 5px;
+      padding: 5px;
+    }
+    button {
+      width: 100%;
+    }
+  }
+  .hide {
+    opacity: 0;
+    transition: opacity 0.5s linear;
+    -webkit-transition: opacity 0.5s linear;
+    -moz-transition: opacity 0.5s linear;
+    -o-transition: opacity 0.5s linear;
+  }
+  .show {
+    opacity: 1;
+    transition: opacity 0.5s linear;
+    -webkit-transition: opacity 0.5s linear;
+    -moz-transition: opacity 0.5s linear;
+    -o-transition: opacity 0.5s linear;
+  }
+}
