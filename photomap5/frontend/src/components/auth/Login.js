@@ -7,7 +7,7 @@ import { setAlert } from '../../actions/alert';
 
 function Login({ setAlert, login, isAuthenticated }) {
   const [formData, setFormData] = useState({
-    email: '',
+    username: '',
     password: '',
   });
 
@@ -17,11 +17,11 @@ function Login({ setAlert, login, isAuthenticated }) {
     }
   }, []);
 
-  const { email, password } = formData;
+  const { username, password } = formData;
 
   const onSubmit = (e) => {
     e.preventDefault();
-    login({ email, password });
+    login(username, password);
   };
 
   const onChange = (e) => {
@@ -55,9 +55,10 @@ function Login({ setAlert, login, isAuthenticated }) {
               </h3>
               <div className="form-group">
                 <input
+                  className="form-control"
                   type="text"
-                  name="email"
-                  value={email}
+                  name="username"
+                  value={username}
                   onChange={(e) => onChange(e)}
                   required
                   placeholder={
@@ -67,6 +68,7 @@ function Login({ setAlert, login, isAuthenticated }) {
               </div>
               <div className="form-group">
                 <input
+                  className="form-control"
                   type="text"
                   name="password"
                   value={password}

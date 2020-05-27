@@ -7,21 +7,21 @@ import PropTypes from 'prop-types';
 
 function Register({ isAuthenticated, register, setAlert }) {
   const [formData, setFormData] = useState({
-    username: '',
+    last_name: '',
     email: '',
     password: '',
     password2: '',
   });
 
-  const { username, email, password, password2 } = formData;
+  const { last_name, email, password, password2 } = formData;
 
   const onSubmit = (e) => {
     e.preventDefault();
-    console.log(username, email, password);
     if (password !== password2) {
       setAlert('Passwords do not match', 'danger', 3600);
     } else {
-      register({ username, email, password });
+      const username = email;
+      register({ last_name, username, email, password });
     }
   };
 
@@ -64,8 +64,8 @@ function Register({ isAuthenticated, register, setAlert }) {
                 <input
                   className="form-control"
                   type="text"
-                  name="username"
-                  value={username}
+                  name="last_name"
+                  value={last_name}
                   onChange={(e) => onChange(e)}
                   required
                   placeholder={

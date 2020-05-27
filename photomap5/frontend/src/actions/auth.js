@@ -44,7 +44,6 @@ export const login = (username, password) => (dispatch) => {
 
   // Request Body
   const body = JSON.stringify({ username, password });
-
   axios
     .post('/api/auth/login', body, config)
     .then((res) => {
@@ -62,7 +61,9 @@ export const login = (username, password) => (dispatch) => {
 };
 
 // REGISTER USER
-export const register = ({ username, email, password }) => (dispatch) => {
+export const register = ({ last_name, username, email, password }) => (
+  dispatch
+) => {
   // Headers
   const config = {
     headers: {
@@ -71,8 +72,7 @@ export const register = ({ username, email, password }) => (dispatch) => {
   };
 
   // Request Body
-  const body = JSON.stringify({ username, email, password });
-  console.log(body);
+  const body = JSON.stringify({ last_name, username, email, password });
   axios
     .post('/api/auth/register', body, config)
     .then((res) => {
@@ -94,7 +94,7 @@ export const logout = () => (dispatch, getState) => {
   axios
     .post('/api/auth/logout/', null, tokenConfig(getState))
     .then((res) => {
-      dispatch({ type: 'CLEAR_LEADS' });
+      //dispatch({ type: 'CLEAR_LEADS' });
       dispatch({
         type: LOGOUT,
       });
